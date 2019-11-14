@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS BASIC</title>
+</head>
+
+<body>
+
+    <script>
+
+        //EX.1
+        console.log("¡Hola mundo!");
+
+        //EX.2
+        alert("¡Soy Cris!");
+
+        //EX.3
+        var name = "Cristina";
+        var lastName = "Cid";
+        console.log("Mi nombre es " + name + " " + lastName + ".");
+
+        //EX.4
+        var firstNumber = 8;
+        var secondNumber = 10;
+        var calculate = (8 + 10);
+        console.log("La suma entre " + firstNumber + " y " + secondNumber + " es " + calculate + " como resultado.");
+
+        //EX.5
+        var examGrade = parseFloat(prompt("Introduce la nota del examen:"));
+        if (examGrade > 0 && examGrade < 5) {
+            alert("Has suspendido el examen con un " + examGrade + ", ¡muy mal!");
+        } else if (examGrade >= 5 && examGrade <= 10) {
+            alert("Has aprobado el examen con un " + examGrade + ", ¡muy bien!")
+        } else {
+            alert("El número del exámen no es válido.");
+        }
+
+        //EX.6
+        var phrase = "Tengo un coche de color azul";
+        var phraseReplaced = phrase.replace("azul", "verde");
+        console.log("La frase inicial era '" + phrase + "' y ahora es '" + phraseReplaced + "'.")
+        var vocalsReplaced = phraseReplaced.replace(/o/g, "u");
+        console.log("Cambio de vocales en la frase anterior: " + vocalsReplaced + ".");
+
+        //EX.7
+        var arrayObjects = ["Mesa", "Silla", "Ordenador", "Libreta"];
+        for (var i = 0; i < arrayObjects.length; i++) {
+            console.log("El objeto '" + arrayObjects[i] + "' está en la posicion " + [i] + ".");
+        }
+
+        //EX.8
+        function calculator(operator, value1, value2) {
+            if (operator == "suma") {
+                return value1 + value2;
+            } else if (operator == "resta") {
+                return value1 - value2;
+            } else if (operator == "multiplicacion") {
+                return value1 * value2;
+            }
+        }
+
+        var result = calculator("resta", 40, 20);
+        console.log("Resultado del ejemplo: " + result + ".");
+        document.write("Impresión por pantalla del ejemplo del ejercicio: " + result + ".");
+
+    </script>
+
+</body>
+
+</html>
