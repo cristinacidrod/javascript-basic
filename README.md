@@ -1,6 +1,6 @@
 # JavaScript Basic
 
-First exercises of basic JavaScript in the Front-End itinerary.
+First exercises of basic JavaScript made for the Front-End itinerary.
 
 // *IT ACADEMY*
 
